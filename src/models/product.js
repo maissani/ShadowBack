@@ -1,7 +1,15 @@
 const product = (sequelize, DataTypes) => {
     const Product = sequelize.define('product', {
-      text: {
+      name: {
         type: DataTypes.STRING,
+        validate: { notEmpty: true },
+      },
+      description: {
+        type: DataTypes.STRING,
+        validate: { notEmpty: true },
+      },
+      price: {
+        type: DataTypes.FLOAT,
         validate: { notEmpty: true },
       },
     });

@@ -104,7 +104,21 @@ const createUsersWithMessages = async date => {
       role: 'ADMIN',
       products: [
         {
-          text: '1080TI AMP EXTREM',
+          name: '1080TI AMP EXTREM',
+          description: 'Une carte graphique d exeption',
+          price: 999.9,
+          createdAt: date.setSeconds(date.getSeconds() + 1),
+        },
+        {
+          name: 'Logitech C920 camera',
+          description: 'Une caméra haute qualité',
+          price: 99.9,
+          createdAt: date.setSeconds(date.getSeconds() + 1),
+        },
+        {
+          name: 'Elagto Stream deck',
+          description: 'Une caméra haute qualité',
+          price: 120.9,
           createdAt: date.setSeconds(date.getSeconds() + 1),
         },
       ],
@@ -122,14 +136,6 @@ const createUsersWithMessages = async date => {
       email: 'contact@thomasdupont.com',
       password: "-User+Test=2",
       products: [
-        {
-          text: 'Logitech C920 camera',
-          createdAt: date.setSeconds(date.getSeconds() + 1),
-        },
-        {
-          text: 'Elagto Stream deck',
-          createdAt: date.setSeconds(date.getSeconds() + 1),
-        },
       ],
     },
     {

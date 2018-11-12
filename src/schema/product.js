@@ -19,7 +19,9 @@ export default gql`
   }
   type Product {
     id: ID!
-    text: String!
+    name: String!
+    description: String!
+    price: Float!
     createdAt: Date!
     user: User!
   }
