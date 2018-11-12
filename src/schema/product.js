@@ -6,7 +6,11 @@ export default gql`
     product(id: ID!): Product!
   }
   extend type Mutation {
-    createProduct(text: String!): Product!
+    createProduct(
+      name: String!
+      description: String!
+      price: Float!
+    ): Product!
     deleteProduct(id: ID!): Boolean!
   }
   type ProductConnection {

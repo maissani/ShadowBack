@@ -49,9 +49,11 @@ export default {
   Mutation: {
     createProduct: combineResolvers(
       isAuthenticated,
-      async (parent, { text }, { models, me }) => {
+      async (parent, { name, description, price }, { models, me }) => {
         const product = await models.Product.create({
-          text,
+          name,
+          description,
+          price,
           userId: me.id,
         });
 
