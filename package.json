@@ -25,7 +25,7 @@
   "homepage": "https://github.com/maissani/ShadowBack#readme",
   "dependencies": {
     "apollo-server": "^2.2.0",
-    "apollo-server-express": "^2.2.0",
+    "apollo-server-express": "^2.14.2",
     "bcrypt": "^3.0.2",
     "cors": "^2.8.5",
     "dataloader": "^1.4.0",
